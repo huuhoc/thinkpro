@@ -1685,3 +1685,217 @@
 	}
 
 }
+
+
+/* Page Bảo hành -------------------------------- */
+.page-bao-hanh {
+	.page-title {
+		h1 {
+			font-size: 20px;
+			color: #333333;
+		}
+	}
+	.page-content {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		.card {
+			padding: 15px;
+			width: 60%;
+			margin: 0 auto;
+			border-color: $theme-color-default;
+			font-size: 15px;
+			color: #333;
+			form {
+				padding: 58px 15%;
+				overflow: hidden;
+				label {
+					font-weight: bold;
+				}
+				button {
+					float: right;
+					font-size: 16px;
+					background: $theme-color-default;
+					border-color: $theme-color-default;
+					@include border-radius(5px);
+					color: #fff;
+					font-weight: bold;
+					padding: 10px 60px;
+					text-transform: uppercase;
+					&:hover {
+						background: $theme-color-primary;
+						border-color: $theme-color-primary;
+					}
+				}
+				.form-control {
+					height: 50px;
+					@include border-radius(3px);
+					line-height: 50px;
+					&:hover, &:focus {
+						border-color: $theme-color-default;
+						@include box-shadow(none);
+					}
+				}
+			}
+			strong {
+				color: #333;
+			}
+			a {
+				color: $theme-color-default;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+			.page-middle {
+				padding: 20px 0;
+			}
+			.page-bottom {
+				.btn {
+					font-size: 16px;
+					background: $theme-color-default;
+					border-color: $theme-color-default;
+					@include border-radius(5px);
+					color: #fff;
+					font-weight: bold;
+					padding: 10px 60px;
+					text-transform: uppercase;
+					&:hover {
+						background: $theme-color-primary;
+						border-color: $theme-color-primary;
+					}
+				}
+			}
+			&.bao-hanh-chitiet {
+				.page-middle {
+					color: $theme-color-default;
+				}
+			}
+			@media (max-width: 767px) {
+				width: 100%;
+			}	
+		}
+	}
+}
+
+
+/* Page Gio hang --------------------------------- */
+.page-dat-hang {
+	.page-title {
+		h1 {
+			font-size: 20px;
+			color: #333333;
+		}
+	}
+	.wapper-cart {
+		width: 60%;
+		margin: 0 auto;
+		@media (max-width: 767px) {
+			width: 100%;
+		}
+		.wapper-cart-top {
+			margin-bottom: 10px;
+			a.back-page {
+				background: $theme-color-default;
+				text-transform: uppercase;
+				font-size: 14px;
+				color: #fff;
+				display: inline-block;
+				padding: 5px 15px;
+				@include border-radius(3px);
+				&:hover {
+					background: $theme-color-primary;
+					text-decoration: none;
+				}
+				span {
+					padding-right: 15px;
+					padding-left: 5px;
+				}
+			}
+		}
+		#cart-form {
+			border: 1px solid $theme-color-default;
+			@include border-radius(2px);
+			margin-bottom: 60px;
+			font-size: 14px;
+			.form-control {
+				height: 50px;
+				line-height: 50px;
+				font-size: 14px;
+				border-color: #ccc;
+				@include border-radius(3px);
+				&:hover, &:focus {
+					border-color: $theme-color-default;
+					@include box-shadow(none);
+				}
+			}
+			.form-check {
+				padding-left: 24px;
+				.form-check-input {
+					margin-left: -24px;
+				}
+			}
+			.btn {
+				height: 50px;
+				font-size: 14px;
+				padding-left: 25px; 
+				padding-right: 25px;
+				background: $theme-color-default;
+				border-color: $theme-color-default;
+				color: #fff;
+				font-weight: bold;
+				@include border-radius(3px);
+				&:hover {
+					background: $theme-color-primary;
+					border-color: $theme-color-primary;
+				}
+			}
+			.cart-summer {
+				padding: 10px 25px;
+				border-bottom: 1px solid #e1e1e1;
+			}
+			.total-price {
+				label {
+					color: #333;
+					font-weight: bold;
+				}
+				.total-price-value {
+					color: #c10015;
+					font-size: 22px;
+					font-weight: bold;
+				}
+			}
+			.voucher {
+
+			}
+			.info-customer {
+				padding: 10px 25px;
+			}
+			.info-ship {
+				padding: 10px 25px 25px;
+			}
+			.diachigiaohang {
+				margin-top: 10px;
+				padding: 25px;
+				background: #f0f0f0;
+				position: relative;
+				&:before {
+					content: '';
+					@include border-arrow-top(22px, 12px,#f0f0f0);
+					position: absolute;
+					top: -12px;
+					left: 60px;
+				}
+			}
+			.group-action {
+				padding: 0 25px;
+				margin-bottom: 15px;
+				.btn {
+					text-transform: uppercase;
+				}
+				.btn-default {
+					background: #f88409;
+					border-color: #f88409;
+				}
+			}
+		}
+	}
+}

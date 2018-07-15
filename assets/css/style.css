@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .mt-0 {
   margin-top: 0px !important;
 }
@@ -4151,4 +4152,276 @@ body.overflow {
     padding: 5px 10px;
     margin-bottom: 10px;
   }
+}
+
+/* Page Bảo hành -------------------------------- */
+.page-bao-hanh .page-title h1 {
+  font-size: 20px;
+  color: #333333;
+}
+
+.page-bao-hanh .page-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.page-bao-hanh .page-content .card {
+  padding: 15px;
+  width: 60%;
+  margin: 0 auto;
+  border-color: #27bece;
+  font-size: 15px;
+  color: #333;
+}
+
+.page-bao-hanh .page-content .card form {
+  padding: 58px 15%;
+  overflow: hidden;
+}
+
+.page-bao-hanh .page-content .card form label {
+  font-weight: bold;
+}
+
+.page-bao-hanh .page-content .card form button {
+  float: right;
+  font-size: 16px;
+  background: #27bece;
+  border-color: #27bece;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 60px;
+  text-transform: uppercase;
+}
+
+.page-bao-hanh .page-content .card form button:hover {
+  background: #1b283e;
+  border-color: #1b283e;
+}
+
+.page-bao-hanh .page-content .card form .form-control {
+  height: 50px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  line-height: 50px;
+}
+
+.page-bao-hanh .page-content .card form .form-control:hover, .page-bao-hanh .page-content .card form .form-control:focus {
+  border-color: #27bece;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.page-bao-hanh .page-content .card strong {
+  color: #333;
+}
+
+.page-bao-hanh .page-content .card a {
+  color: #27bece;
+}
+
+.page-bao-hanh .page-content .card a:hover {
+  text-decoration: none;
+}
+
+.page-bao-hanh .page-content .card .page-middle {
+  padding: 20px 0;
+}
+
+.page-bao-hanh .page-content .card .page-bottom .btn {
+  font-size: 16px;
+  background: #27bece;
+  border-color: #27bece;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 60px;
+  text-transform: uppercase;
+}
+
+.page-bao-hanh .page-content .card .page-bottom .btn:hover {
+  background: #1b283e;
+  border-color: #1b283e;
+}
+
+.page-bao-hanh .page-content .card.bao-hanh-chitiet .page-middle {
+  color: #27bece;
+}
+
+@media (max-width: 767px) {
+  .page-bao-hanh .page-content .card {
+    width: 100%;
+  }
+}
+
+/* Page Gio hang --------------------------------- */
+.page-dat-hang .page-title h1 {
+  font-size: 20px;
+  color: #333333;
+}
+
+.page-dat-hang .wapper-cart {
+  width: 60%;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .page-dat-hang .wapper-cart {
+    width: 100%;
+  }
+}
+
+.page-dat-hang .wapper-cart .wapper-cart-top {
+  margin-bottom: 10px;
+}
+
+.page-dat-hang .wapper-cart .wapper-cart-top a.back-page {
+  background: #27bece;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 15px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.page-dat-hang .wapper-cart .wapper-cart-top a.back-page:hover {
+  background: #1b283e;
+  text-decoration: none;
+}
+
+.page-dat-hang .wapper-cart .wapper-cart-top a.back-page span {
+  padding-right: 15px;
+  padding-left: 5px;
+}
+
+.page-dat-hang .wapper-cart #cart-form {
+  border: 1px solid #27bece;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  margin-bottom: 60px;
+  font-size: 14px;
+}
+
+.page-dat-hang .wapper-cart #cart-form .form-control {
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  border-color: #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.page-dat-hang .wapper-cart #cart-form .form-control:hover, .page-dat-hang .wapper-cart #cart-form .form-control:focus {
+  border-color: #27bece;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.page-dat-hang .wapper-cart #cart-form .form-check {
+  padding-left: 24px;
+}
+
+.page-dat-hang .wapper-cart #cart-form .form-check .form-check-input {
+  margin-left: -24px;
+}
+
+.page-dat-hang .wapper-cart #cart-form .btn {
+  height: 50px;
+  font-size: 14px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background: #27bece;
+  border-color: #27bece;
+  color: #fff;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.page-dat-hang .wapper-cart #cart-form .btn:hover {
+  background: #1b283e;
+  border-color: #1b283e;
+}
+
+.page-dat-hang .wapper-cart #cart-form .cart-summer {
+  padding: 10px 25px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.page-dat-hang .wapper-cart #cart-form .total-price label {
+  color: #333;
+  font-weight: bold;
+}
+
+.page-dat-hang .wapper-cart #cart-form .total-price .total-price-value {
+  color: #c10015;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.page-dat-hang .wapper-cart #cart-form .info-customer {
+  padding: 10px 25px;
+}
+
+.page-dat-hang .wapper-cart #cart-form .info-ship {
+  padding: 10px 25px 25px;
+}
+
+.page-dat-hang .wapper-cart #cart-form .diachigiaohang {
+  margin-top: 10px;
+  padding: 25px;
+  background: #f0f0f0;
+  position: relative;
+}
+
+.page-dat-hang .wapper-cart #cart-form .diachigiaohang:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 11px 12px 11px;
+  border-color: transparent transparent #f0f0f0 transparent;
+  position: absolute;
+  top: -12px;
+  left: 60px;
+}
+
+.page-dat-hang .wapper-cart #cart-form .group-action {
+  padding: 0 25px;
+  margin-bottom: 15px;
+}
+
+.page-dat-hang .wapper-cart #cart-form .group-action .btn {
+  text-transform: uppercase;
+}
+
+.page-dat-hang .wapper-cart #cart-form .group-action .btn-default {
+  background: #f88409;
+  border-color: #f88409;
 }
