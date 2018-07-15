@@ -22,6 +22,7 @@
 
 	<!-- //load file js bottom -->
 	<script type="text/javascript" id="" src="assets/js/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 	<script type="text/javascript" id="" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" id="" src="assets/js/jquery.sticky-kit.min.js"></script>
 	<script type="text/javascript" id="" src="assets/js/jquery.lazyload.min.js"></script>
@@ -148,15 +149,36 @@
 				<section class="page-content">
 					<div class="wapper-cart">
 						<div class="wapper-cart-top">
-							<a class="back-page" href='#' onclick="window.history.back();"><i class="fa fa-angle-left" aria-hidden="true"></i>
-<span>Trở về mua thêm</span></a>
+							<a class="back-page" href='#' onclick="window.history.back();"><i class="fa fa-angle-left" aria-hidden="true"></i><span>Trở về mua thêm</span></a>
 						</div>
 						<form id="cart-form" action="#" method="POST">
 							<ul class="list-order list-unstyled">
 								<li class="order-item" data-value="1" data-quantity="1">
 									<div class="d-flex">
-										<div class="col-image"></div>
-										<div class="col-info"></div>
+										<div class="col-image"><img class="img-fluid" src="images/products/product-01.jpg" alt="product name"></div>
+										<div class="col-info">
+											<div class="product-name"><a href="detail.html">Dell XPS 13 9343 i5 5200U RAM 4GB SSD 128GB (Hàng nhập khẩu)</a></div>
+											<div class="promotion">
+												<div class="qua-tang">
+													<ul class="list-unstyled">
+														<li>Tặng Balo laptop, chuột không dây, túi chống xốc laptop, bộ vệ sinh laptop</li>
+														<li>Gói chăm sóc máy tính trọn đời, cài đặt Windows bản quyền</li>
+													</ul>
+												</div>
+											</div>
+											<ul class="attribute list-unstyled">
+												<li><span>Màu</span>: vàng đồng</li>
+											</ul>
+										</div>
+										<div class="col-price">
+											<div class="price">26.990.000đ</div>
+											<div class="choosequantity">
+					                            <input class="hdQuantity" name="ListNone[0].Quantity" value="1" type="hidden">
+					                            <div class="abate "></div>
+					                            <div class="number">1</div>
+					                            <div class="augment "></div>
+					                        </div>
+										</div>
 									</div>
 								</li>
 							</ul>
@@ -217,25 +239,31 @@
 								</div>
 								<div class="diachigiaohang">
 									<div class="form-row">
-									    <div class="form-group col-md-6">
-									    	<select id="inputState" class="form-control">
-										        <option selected="">TP.Hà Nội</option>
-										        <option>TP.Hồ Chí Minh</option>
-										        <option>Ninh Bình</option>
-										        <option>Thanh Hóa</option>
-										        <option>Bắc Ninh</option>
-										        <option>Hải Dương</option>
-									      	</select>
+									    <div class="form-group col-md-6 field-city">
+									    	<div class="dropdown">
+												<input type="hidden" name="tinh" value="0" class="input_tinh">
+											    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"aria-expanded="false">Chọn tỉnh thành</button>
+											    <ul class="dropdown-menu list-unstyled">
+											    	<li class="dropdown-item active" data-value="0">Chọn tỉnh thành</li>
+											    	<li class="dropdown-item" data-value="1">TP.Hồ Chí Minh</li>
+											    	<li class="dropdown-item" data-value="2">TP.Hà Nội</li>
+											    	<li class="dropdown-item" data-value="3">Ninh Bình</li>
+											    	<li class="dropdown-item" data-value="4">Bắc Ninh</li>
+											    </ul>
+											</div>
 									    </div>
-									    <div class="form-group col-md-6">
-									    	<select id="inputState" class="form-control">
-										        <option selected="">Chọn quận, huyện</option>
-										        <option>Ba Đình</option>
-										        <option>Đống Đa</option>
-										        <option>Cầu Giấy</option>
-										        <option>Long Biên</option>
-										        <option>Thanh Trì</option>
-									      	</select>
+									    <div class="form-group col-md-6 field-dist">
+									    	<div class="dropdown">
+									    		<input type="hidden" name="huyen" value="0" class="input_huyen">
+											    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"aria-expanded="false">Chọn quận, huyện</button>
+											    <ul class="dropdown-menu list-unstyled">
+											    	<li class="dropdown-item active" data-value="0">Chọn quận, huyện</li>
+											    	<li class="dropdown-item" data-value="1">Ba Đình</li>
+											    	<li class="dropdown-item" data-value="2">Đống Đa</li>
+											    	<li class="dropdown-item" data-value="3">Cầu Giấy</li>
+											    	<li class="dropdown-item" data-value="4">Thanh Trì</li>
+											    </ul>
+											</div>
 									    </div>
 									</div>
 									<div class="form-row mb-100">

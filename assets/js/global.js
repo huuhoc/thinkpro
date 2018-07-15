@@ -177,6 +177,39 @@ thinkpro.goToTop = function() {
     });
 }
 
+//Cart page
+thinkpro.Cartpage = function() {
+  $('input[type=radio][name=phuongthucgiaohang]').change(function() {
+    var aa =  $("input[name='phuongthucgiaohang']:checked").val();
+    if (aa == 'diachigiaohang') {
+      $('.diachicuahang').slideUp();
+      $('.diachigiaohang').slideDown();
+    }
+    else if (aa == 'taicuahang') {
+      $('.diachigiaohang').slideUp();
+      $('.diachicuahang').slideDown();
+    }
+  });
+
+  $('.field-city').on('click','li', function(e){
+    e.preventDefault();
+    $('.field-city .dropdown-item').removeClass('active');
+    $(this).addClass('active');
+    var id_tinh = $(this).data("value");
+    $('.input_tinh','.field-city').val(id_tinh);
+    $('.field-city .dropdown-toggle').html($(this).html());
+  });
+  $('.field-dist').on('click','li', function(e){
+    e.preventDefault();
+    $('.field-dist .dropdown-item').removeClass('active');
+    $(this).addClass('active');
+    var id_huyen = $(this).data("value");
+    $('.input_huyen','.field-dist').val(id_huyen);
+    $('.field-dist .dropdown-toggle').html($(this).html());
+  });
+
+}
+
 $(document).ready(function(){
   if (responsive_mobile) {
       thinkpro.toggleMobileStyles();
@@ -188,6 +221,7 @@ $(document).ready(function(){
   thinkpro.goToTop();
   thinkpro.DropdownSlide();
   thinkpro.ratingForm();
+  thinkpro.Cartpage();
 });
 
 $(window).on('resize', function() {

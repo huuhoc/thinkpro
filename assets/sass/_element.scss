@@ -818,6 +818,30 @@
 		margin-bottom: 0;
 	}
 }
+
+.qua-tang {
+	background: url(../img/bg-quatang.png) no-repeat scroll bottom right 0 #e8f8ee;
+	color: #30a43b;
+	padding: 13px 90px 13px 10px;
+	margin-bottom: 9px;
+	@include border-radius(3px);
+	ul {
+		margin-bottom: 0;
+		li {
+			padding-left: 20px;
+			position: relative;
+			&:before {
+				content: "\f058";
+				font-family: "FontAwesome";
+				display: inline-block;
+				position: absolute;
+				left: 0;
+				top: 2px;
+			}
+		}
+	}
+}
+
 .content-middle-middle {
 	#productdetail-thumnail {
 		@media (min-width: 992px) {
@@ -879,28 +903,7 @@
 			text-decoration: line-through;
 		}
 	}
-	.qua-tang {
-		background: url(../img/bg-quatang.png) no-repeat scroll bottom right 0 #e8f8ee;
-		color: #30a43b;
-		padding: 13px 90px 13px 10px;
-		margin-bottom: 9px;
-		@include border-radius(3px);
-		ul {
-			margin-bottom: 0;
-			li {
-				padding-left: 20px;
-				position: relative;
-				&:before {
-					content: "\f058";
-					font-family: "FontAwesome";
-					display: inline-block;
-					position: absolute;
-					left: 0;
-					top: 2px;
-				}
-			}
-		}
-	}
+	
 	.group-button {
 		font-family: Arial;
 		margin-bottom: 20px;
@@ -1749,6 +1752,7 @@
 				padding: 20px 0;
 			}
 			.page-bottom {
+				p {margin-bottom: 0;}
 				.btn {
 					font-size: 16px;
 					background: $theme-color-default;
@@ -1758,11 +1762,15 @@
 					font-weight: bold;
 					padding: 10px 60px;
 					text-transform: uppercase;
+					margin-top: 15px;
 					&:hover {
 						background: $theme-color-primary;
 						border-color: $theme-color-primary;
 					}
 				}
+			}
+			.package {
+				padding: 15px 0 15px;
 			}
 			&.bao-hanh-chitiet {
 				.page-middle {
@@ -1811,6 +1819,107 @@
 				}
 			}
 		}
+		.list-order {
+			padding: 25px;
+			.order-item {
+				.col-image {
+					width: 15%;
+					margin-right: 15px;
+				}
+				.col-info {
+					width: 55%;
+					.product-name {
+						a {
+							font-size: 16px;
+							color: #333;
+						}
+					}
+				}
+				.col-price {
+					position: relative;
+					width: 30%;
+					.price {
+						font-size: 16px;
+						color: #ca1816;
+						text-align: right;
+						margin-bottom: auto;
+					}
+					.choosequantity {
+						position: absolute;
+						bottom: 0;
+						right: 0;
+						overflow: hidden;
+						border: 1px solid #dfdfdf;
+						background: #fff;
+						border-radius: 3px;
+						line-height: 32px;
+						font-size: 14px;
+						color: #333;
+						.abate {
+						    float: left;
+						    border-right: 1px solid #dfdfdf;
+						    background: #fff;
+						    width: 48px;
+						    height: 32px;
+						    position: relative;
+						    cursor: pointer;
+						    &:before {
+							    content: '';
+							    width: 12px;
+							    height: 2px;
+							    background: #ccc;
+							    display: block;
+							    margin: 15px auto;
+							}
+						}
+						.number {
+						    font-size: 14px;
+						    color: #333;
+						    float: left;
+						    width: 48px;
+						    height: 32px;
+						    text-align: center;
+						}
+						.augment {
+						    float: right;
+						    border-left: 1px solid #dfdfdf;
+						    background: #fff;
+						    width: 48px;
+						    height: 32px;
+						    position: relative;
+						    cursor: pointer;
+						    &:before {
+							    content: '';
+							    width: 12px;
+							    height: 2px;
+							    background: #dfdfdf;
+							    display: block;
+							    margin: 15px auto;
+							}
+							&:after {
+							    content: '';
+							    width: 2px;
+							    height: 12px;
+							    background: #dfdfdf;
+							    display: block;
+							    margin: 0 auto;
+							    position: absolute;
+							    top: 10px;
+							    left: 0;
+							    right: 0;
+							}
+						}
+						.abate, .augment {
+							&:hover {
+								&:before,&:after {
+									background: $theme-color-default;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 		#cart-form {
 			border: 1px solid $theme-color-default;
 			@include border-radius(2px);
@@ -1833,6 +1942,9 @@
 					margin-left: -24px;
 				}
 			}
+			select {
+				color: $theme-color-default;
+			}
 			.btn {
 				height: 50px;
 				font-size: 14px;
@@ -1846,6 +1958,54 @@
 				&:hover {
 					background: $theme-color-primary;
 					border-color: $theme-color-primary;
+				}
+				&.dropdown-toggle {
+					width: 100%;
+					background: #fff;
+					color: $theme-color-default;
+					padding-right: 10px;
+					padding-left: 10px;
+					border-color: #ced4da;
+					font-weight: normal;
+					text-align: left;
+					&:hover, &:focus {
+						border-color: #ced4da;
+						@include box-shadow(none);
+					}
+					&:after {
+						position: absolute;
+						right: 10px;
+						top: 20px;
+						@include border-arrow-bottom(15px, 7px, $theme-color-default);
+					}
+				}
+			}
+			.dropdown-menu {
+				width: 100%;
+				@include border-radius(3px);
+				border-color: #e1e1e1;
+				margin-top: 8px;
+				background: #fff;
+				.dropdown-item {
+					font-size: 14px;
+					&.active, &:hover {
+						color: $theme-color-default;
+						background: #fff;
+					}
+				}
+				&:before {
+					content: '';
+					@include border-arrow-top(20px, 10px, #e1e1e1);
+					position: absolute;
+					top: -10px;
+					left: 15px;
+				}
+				&:after {
+					content: '';
+					@include border-arrow-top(18px, 10px, #fff);
+					position: absolute;
+					top: -9px;
+					left: 16px;
 				}
 			}
 			.cart-summer {
@@ -1864,7 +2024,9 @@
 				}
 			}
 			.voucher {
-
+				.form-control {
+					min-width: 295px;
+				}
 			}
 			.info-customer {
 				padding: 10px 25px;
@@ -1873,8 +2035,9 @@
 				padding: 10px 25px 25px;
 			}
 			.diachigiaohang {
+				display: none;
 				margin-top: 10px;
-				padding: 25px;
+				padding: 25px 15px 10px;
 				background: #f0f0f0;
 				position: relative;
 				&:before {
@@ -1883,6 +2046,20 @@
 					position: absolute;
 					top: -12px;
 					left: 60px;
+				}
+			}
+			.diachicuahang {
+				display: none;
+				margin-top: 10px;
+				padding: 25px 15px 10px;
+				background: #f0f0f0;
+				position: relative;
+				&:before {
+					content: '';
+					@include border-arrow-top(22px, 12px,#f0f0f0);
+					position: absolute;
+					top: -12px;
+					left: 180px;
 				}
 			}
 			.group-action {
