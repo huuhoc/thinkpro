@@ -210,6 +210,13 @@ thinkpro.Cartpage = function() {
 
 }
 
+//Myaccount update
+thinkpro.Myaccountpage = function() {
+  $('.edit').click(function(){
+    $(this).parent().find('input').val('').focus();
+  })
+}
+
 $(document).ready(function(){
   if (responsive_mobile) {
       thinkpro.toggleMobileStyles();
@@ -222,6 +229,7 @@ $(document).ready(function(){
   thinkpro.DropdownSlide();
   thinkpro.ratingForm();
   thinkpro.Cartpage();
+  thinkpro.Myaccountpage();
 });
 
 $(window).on('resize', function() {

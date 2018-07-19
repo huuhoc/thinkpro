@@ -53,6 +53,14 @@
 	background: rgba(#fff,0.2);
 }
 
+.page-title {
+	h1 {
+		font-size: 20px;
+		color: #333333;
+		font-weight: 700;
+	}
+}
+
 /*Search box ----------------------------*/
 .search {
 	width: 100%;
@@ -1692,12 +1700,6 @@
 
 /* Page Bảo hành -------------------------------- */
 .page-bao-hanh {
-	.page-title {
-		h1 {
-			font-size: 20px;
-			color: #333333;
-		}
-	}
 	.page-content {
 		padding-top: 30px;
 		padding-bottom: 30px;
@@ -1787,12 +1789,6 @@
 
 /* Page Gio hang --------------------------------- */
 .page-dat-hang {
-	.page-title {
-		h1 {
-			font-size: 20px;
-			color: #333333;
-		}
-	}
 	.wapper-cart {
 		width: 60%;
 		margin: 0 auto;
@@ -2074,5 +2070,98 @@
 				}
 			}
 		}
+	}
+}
+
+
+/* Page My Account --------------------------------*/
+.my-account {
+	.tab-myaccount {
+		.block-left {
+			width: 235px;
+			margin-right: 55px;
+			.nav-link {
+				margin-bottom: 14px;
+				font-size: 16px;
+				background: $theme-color-default;
+				color: #fff;
+				font-weight: 700;
+				padding: 14px 14px;
+				border-radius: 5px;
+				font-family: Arial;
+				line-height: 20px;
+			}
+		}
+		.block-right {
+			width: 720px;
+			border: 1px solid $theme-color-default;
+			padding: 15px;
+		}
+	}
+	.info-general {
+		label {
+			margin-right: 5px;
+		}
+	}
+	#vtab_info-history{
+		color: #333;
+		thead {
+			background: #f3f3f3;
+		}
+		tbody tr:nth-of-type(2n) {
+		    background-color: #f3f3f3;
+		}
+	}
+	#vtab_info-update {
+		color: #333;
+		font-size: 14px;
+		.form-group {
+			padding: 8px 30px;
+			margin-bottom: 0;
+			position: relative;
+			label {
+				min-width: 100px;
+				justify-content: start;
+			}
+			input {
+				border: none;
+				font-size: 14px;
+				width: calc(100% - 100px);
+				background: transparent;
+				&:focus {
+					@include box-shadow(none);
+				}
+			}
+		}
+		form .form-group:nth-of-type(2n+1) {
+		    background-color: #f3f3f3;
+		}
+		.btn {
+			background: $theme-color-default;
+			border-color: $theme-color-default;
+			color: #fff;
+			font-size: 14px;
+			text-transform: uppercase;
+			font-weight: bold;
+			padding: 4px 39px;
+			@include border-radius(0);
+			&:hover {
+				background: $theme-color-primary;
+				border-color: $theme-color-primary;
+			}
+		}
+		.edit {
+			position: absolute;
+			right: 10px;
+			top: 10px;
+			background: url(../img/icon/icon-edit.png) no-repeat scroll 0 0;
+			width: 22px;
+			height: 22px;
+			cursor: pointer;
+		}
+	}
+	.page-content {
+		margin-top: 40px;
+		margin-bottom: 40px;
 	}
 }
