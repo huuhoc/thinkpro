@@ -110,13 +110,44 @@
 	border-left: 1px solid rgba(#eeeeee,0.3);
 	.users-title {
 		cursor: pointer;
-		line-height: 72px;
+		height: 60px;
+		&:after {
+			display: none;
+		}
 	}
 	.user_menu {
-		position: absolute;
-		top: 100%;
-		left: 0;
-		display: none;
+		padding: 15px;
+		background: #fff;
+		font-size: 14px;
+		min-width: 200px;
+		border-color: #e1e1e1;
+		@include border-radius(5px);
+		li {
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+		a {
+			color: #333;
+			&:hover {
+				color: $theme-color-default;
+				text-decoration: none;
+			}
+		}
+		&:after {
+			position: absolute;
+			content: '';
+			left: 14px;
+			top: -9px;
+			@include border-arrow-top(16px, 9px, #fff);
+		}
+		&:before {
+			position: absolute;
+			content: '';
+			left: 13px;
+			top: -10px;
+			@include border-arrow-top(18px, 10px, #e1e1e1);
+		}
 	}
 }
 .hotline {
@@ -2069,6 +2100,58 @@
 					border-color: #f88409;
 				}
 			}
+			@media (max-width: 767px) {
+				.order-item {
+					.d-flex {
+						display: block !important;
+						overflow: hidden;
+						.col-image {
+							width: 20%;
+							float: left;
+						}
+						.col-info {
+							width: 73%;
+							float: left;
+							.product-name a {
+								font-size: 13px;
+							}
+							.qua-tang {
+								padding: 10px;
+								font-size: 12px;
+							}
+						}
+						.col-price {
+							width: 100%;
+							clear: both;
+							.choosequantity {
+								position: relative;
+								.number {
+									width: calc(100% - 96px);
+								}
+							}
+							&:before {
+								content: '';
+								clear: both;
+							}
+						}
+					}
+				}
+				.voucher .form-control {
+    				min-width: 250px;
+				}
+				.group-action {
+					display: block !important;
+					.btn-default {
+						width: 100% !important;
+						margin-bottom: 10px;
+					}
+					.btn-primary {
+						width: 100% !important;
+						margin-left: 0 !important;
+						margin-bottom: 10px;
+					}
+				}
+			}
 		}
 	}
 }
@@ -2163,5 +2246,133 @@
 	.page-content {
 		margin-top: 40px;
 		margin-bottom: 40px;
+	}
+}
+
+/*Page Login Register*/
+.page-login {
+	.page-content {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+	#tab-form-page {
+		width: 720px;
+		padding: 15px 120px;
+		border: 1px solid $theme-color-default;
+		margin: 0 auto;
+		.nav-tabs {
+			border: none;
+			margin-bottom: 22px;
+			.nav-link {
+				border: none;
+				padding: 0;
+				padding-bottom: 5px;
+				text-transform: uppercase;
+				font-size: 20px;
+				font-weight: bold;
+				color: #a3a3a3;
+				&.active {
+					border-bottom: 3px solid $theme-color-default;
+					color: #333;
+				}
+			}
+			.nav-item {
+				&:not(:last-child) {
+					margin-right: 65px;
+				}
+			}
+		}
+		.form-group {
+			label {
+				min-width: 177px;
+				justify-content: start;
+			}
+			input {
+				min-width: 300px;
+				height: 39px;
+				margin: 0;
+				border: 1px solid #a8a8a8;
+				&:focus {
+					border-color: $theme-color-default;
+					@include box-shadow(none);
+				}
+			}
+		}
+		.form-check {
+			padding-left: 195px;
+			.form-check-input {
+				margin-left: -18px;
+			}
+		}
+		.btn {
+			background: $theme-color-default;
+			border-color: $theme-color-default;
+			color: #fff;
+			font-size: 14px;
+			text-transform: uppercase;
+			font-weight: bold;
+			padding: 8px 39px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			@include border-radius(5px);
+			&:hover {
+				background: $theme-color-primary;
+				border-color: $theme-color-primary;
+			}
+		}
+		.register-btn {
+			width: 203px;
+			height: 49px;
+			line-height: 49px;
+			color: #fff;
+			font-weight: bold;
+			font-size: 16px;
+			text-align: center;
+			text-transform: initial;
+			padding: 0;
+			@include border-radius(5px);
+			margin-bottom: 25px;
+			&.register-facebook {
+				background: #4267b2;
+				border-color: #4267b2;
+				&:hover {
+					background: $theme-color-default;
+					border-color: $theme-color-default;
+					color: #fff;
+				}
+			}
+			&.register-google {
+				background: #ea4235;
+				border-color: #ea4235;
+				&:hover {
+					background: $theme-color-default;
+					border-color: $theme-color-default;
+					color: #fff;
+				}
+			}
+		}
+		a {
+			color: #333;
+			&:hover {
+				color: $theme-color-default;
+				text-decoration: none;
+			}
+		}
+		@media (max-width: 767px) {
+			width: 100%;
+			padding: 15px;
+			.form-group input {
+				min-width: 100%;
+			}
+			.register-btn {
+			    width: 130px;
+			    height: 40px;
+			    line-height: 40px;
+			    font-size: 14px;
+			}
+			.form-check {
+			    padding-left: 19px;
+			}
+		}
 	}
 }

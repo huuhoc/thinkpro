@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-	<title>Bảo Hành Chi Tiết- ThinkPro - Hệ thống bán lẻ máy tính nhập khẩu giá rẻ toàn quốc</title>
+	<title>Đăng nhập - ThinkPro - Hệ thống bán lẻ máy tính nhập khẩu giá rẻ toàn quốc</title>
 	<meta name="keywords" content="Hệ thống bán lẻ máy tính nhập khẩu giá rẻ toàn quốc">
 	<meta name="description" content="Hệ thống bán lẻ máy tính nhập khẩu chính hãng giá rẻ toàn quốc. Business, Đồ họa - Mobile Workstation, Gaming | Hotline: 09.1234.3773">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -17,7 +17,6 @@
 	<!-- //load file css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 
@@ -25,13 +24,12 @@
 	<script type="text/javascript" id="" src="assets/js/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 	<script type="text/javascript" id="" src="assets/js/bootstrap.min.js"></script>
-	<script type="text/javascript" id="" src="assets/js/owl.carousel.min.js"></script>
 	<script type="text/javascript" id="" src="assets/js/jquery.sticky-kit.min.js"></script>
 	<script type="text/javascript" id="" src="assets/js/jquery.lazyload.min.js"></script>
 	<script type="text/javascript" id="" src="assets/js/global.js"></script>
 	
 </head>
-<body class="page-bao-hanh">
+<body class="page-login">
 	<!-- **************************** Header Thinkpro **************************** -->
 	<header>
 		<div id="topbar" class="hidden-sm-down"></div>
@@ -130,14 +128,13 @@
 	</header>
 
 	<!-- **************************** Main Thinkpro ****************************** -->
-
-	<main class="main-pagebrand">
+	<main>
 		<div class="content-top">
 			<div class="container">
 			    <nav aria-label="breadcrumb">
 					<ol class="breadcrumb">
 					    <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-		                <li class="breadcrumb-item"><a href="bao-hanh.html">Bảo hành chi tiết</a></li>
+		                <li class="breadcrumb-item">Đăng nhập</li>
 				    </ol>
 				</nav>
 			</div>
@@ -146,26 +143,66 @@
 		<div class="content-middle">
 			<div class="container">
 				<div class="page-title">
-					<h1>Kiểm tra lịch sử và bảo hành sản phẩm</h1>
+					<h1>Đăng nhập & Đăng ký tài khoản</h1>
 				</div>
 				<section class="page-content">
-					<div class="card bao-hanh-chitiet">
-						<div class="page-top">
-							<p>Xin chào Anh <strong>LÊ VĂN TUẤN</strong>, ThinkPro xin gửi anh lịch sử mua hàng và bảo hành sản phẩm <strong>DELL XPS 15 9550</strong></p>
-						</div>
-						<div class="page-middle">
-							<p class="date-buy">Ngày mua hàng: 12/01/2018</p>
-							<p class="package">Gói bảo hành: 6 tháng - ThinkPro Care (Chi tiết gói bảo hành vui lòng xem tại Phiếu mua hàng, bởi sẽ có một số thành phần có dịch vụ bảo hành khác nhau)</p>
-							<ul class="list-unstyled">
-								<li>Bảo hành lần 1, ngày 15/07/2018. Lý do: Hỏng màn hình - Đã thay màn hình</li>
-								<li>Bảo hành lần 2, ngày 25/07/2018. Lý do: Hỏng main - Đã sửa main</li>
-							</ul>
-
-						</div>
-						<div class="page-bottom text-center">
-							<p>Hoặc liên hệ trực tiếp trung tâm bảo hành và chăm sóc khách hàng: <a href="tel:0966 840 810"><strong>0966 840 810 (Mr. Lê Văn Mạnh)</strong></a></p>
-							<p>Mời quý khách tham khảo một số <a href="#">QUY ĐỊNH BẢO HÀNH</a> của ThinkPro</p>
-							<a href="bao-hanh.html" class="btn btn-primary">Kiểm tra máy khác</a>
+					<div id="tab-form-page">
+						<ul class="nav nav-tabs justify-content-center text-center"role="tablist">
+						  <li class="nav-item">
+						    <a class="nav-link active" id="dang-nhap-tab" data-toggle="tab" href="#dang-nhap" role="tab" aria-controls="dang-nhap" aria-selected="true">Đăng nhập</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" id="dang-ky-tab" data-toggle="tab" href="#dang-ky" role="tab" aria-controls="dang-ky" aria-selected="false">Đăng ký</a>
+						  </li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane fade show active" id="dang-nhap" role="tabpanel" aria-labelledby="dang-nhap-tab">
+								<div class="form-group form-inline">
+								    <label for="inputemail">Email</label>
+								    <input type="email" id="inputemail" class="form-control">
+							  	</div>
+								<div class="form-group form-inline">
+								    <label for="inputpassword">Mật khẩu</label>
+								    <input type="password" id="inputpassword" class="form-control">
+							  	</div>
+							  	<div class="form-check">
+								    <input type="checkbox" class="form-check-input" id="luudangnhap">
+								    <label class="form-check-label" for="luudangnhap">Ghi nhớ đăng nhập</label>
+							  	</div>
+							  	<div class="text-center">
+									<button class="btn btn-default" type="submit">Đăng nhập</button>
+									<p>
+										<a href="#recover" class="mr-2" id="RecoverPassword">Quên mật khẩu?</a> 
+									</p>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="dang-ky" role="tabpanel" aria-labelledby="dang-ky-tab">
+								<div class="d-flex justify-content-between">
+									<a href="#" class="btn register-btn register-facebook">+ Facebook</a>
+									<a href="#" class="btn register-btn register-google">+ Google</a>
+								</div>
+								<form method="post" action="/account" id="create_customer" accept-charset="UTF-8">
+									<div class="form-group form-inline">
+									    <label for="HoTen">Họ và Tên</label>
+									    <input name="customer[hoten]" id="HoTen" class="form-control" autofocus="" type="text">
+								    </div>
+								    <div class="form-group form-inline">
+									    <label for="SoDienThoai">Số điện thoại</label>
+									    <input name="customer[sdt]" id="SoDienThoai" class="form-control" type="text">
+								    </div>
+								    <div class="form-group form-inline">
+									    <label for="Email">Email</label>
+									    <input name="customer[email]" id="email" class="form-control" autocorrect="off" autocapitalize="off" type="email">
+								    </div>
+								    <div class="form-group form-inline">
+									    <label for="CreatePassword">Mật khẩu</label>
+									    <input name="customer[password]" id="CreatePassword" class="form-control" type="password">
+								    </div>
+								    <p class="text-center">
+								      <button class="btn btn-default" type="submit">Đăng Ký</button>
+								    </p>
+								 </form>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -183,8 +220,8 @@
 	      			<div class="block-content row">
 	      				<div class="baiviet-feature">
 	      					<div class="item-baiviet video">
-	      						<div class="title-baiviet"><a href="#">Top 5 laptop tầm trung đáng mua sắm trong tháng 6/2018</a></div>
-	      						<a class="thumnail-baiviet" href="#">
+	      						<div class="title-baiviet"><a href="tintuc-detail.html">Top 5 laptop tầm trung đáng mua sắm trong tháng 6/2018</a></div>
+	      						<a class="thumnail-baiviet" href="tintuc-detail.html">
 							  		<img class="img-fluid" src="images/baiviet/baiviet-04.jpg" alt="bai viet 04">
 	      						</a>
 	      						<i class="icon-video"></i>
@@ -192,31 +229,31 @@
 	      				</div>
 	      				<div class="list-baiviet">
 	      					<div class="item-baiviet media">
-	      						<a class="thumnail-baiviet" href="#">
+	      						<a class="thumnail-baiviet" href="tintuc-detail.html">
 							  		<img class="mr-3 img-fluid" src="images/baiviet/baiviet-01.jpg" alt="bai viet 01">
 	      						</a>
 							  	<div class="media-body">
-							    	<div class="title-baiviet"><a href="#">Top 5 laptop tầm trung đáng mua sắm trong tháng 6/2018</a></div>
+							    	<div class="title-baiviet"><a href="tintuc-detail.html">Top 5 laptop tầm trung đáng mua sắm trong tháng 6/2018</a></div>
 							    	<div class="description-baiviet">Trong tầm giá quanh mốc 15 triệu luôn là phân khúc khó lựa chọn laptop vì những...</div>
 							    	<div class="info-baiviet"><span class="date-create">29/5/2017</span></div>
 							  	</div>
 							</div>
 							<div class="item-baiviet media">
-	      						<a href="#">
+	      						<a href="tintuc-detail.html">
 							  		<img class="mr-3 img-fluid" src="images/baiviet/baiviet-02.jpg" alt="bai viet 02">
 	      						</a>
 							  	<div class="media-body">
-							    	<div class="title-baiviet"><a href="#">Top 5 laptop tầm trung đáng mua sắm trong tháng 6/2018</a></div>
+							    	<div class="title-baiviet"><a href="tintuc-detail.html">Top 5 laptop tầm trung đáng mua sắm trong tháng 6/2018</a></div>
 							    	<div class="description-baiviet">Trong tầm giá quanh mốc 15 triệu luôn là phân khúc khó lựa chọn laptop vì những...</div>
 							    	<div class="info-baiviet"><span class="date-create">29/5/2017</span></div>
 							  	</div>
 							</div>
 							<div class="item-baiviet media">
-	      						<a href="#">
+	      						<a href="tintuc-detail.html">
 							  		<img class="mr-3 img-fluid" src="images/baiviet/baiviet-03.jpg" alt="bai viet 03">
 	      						</a>
 							  	<div class="media-body">
-							    	<div class="title-baiviet"><a href="#">Top 5 laptop tầm trung đáng mua sắm trong tháng 6/2018</a></div>
+							    	<div class="title-baiviet"><a href="tintuc-detail.html">Top 5 laptop tầm trung đáng mua sắm trong tháng 6/2018</a></div>
 							    	<div class="description-baiviet">Trong tầm giá quanh mốc 15 triệu luôn là phân khúc khó lựa chọn laptop vì những...</div>
 							    	<div class="info-baiviet"><span class="date-create">29/5/2017</span></div>
 							  	</div>
