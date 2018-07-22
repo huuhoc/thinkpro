@@ -2191,8 +2191,27 @@
 		thead {
 			background: #f3f3f3;
 		}
-		tbody tr:nth-of-type(2n) {
-		    background-color: #f3f3f3;
+		@for $i from 0 through 50 {
+			@if ($i % 2 == 0) {
+			    tbody tr.listitem-#{$i} {
+				    background-color: #f3f3f3;
+				}
+			}
+		}
+		.view-chitiet-order {
+			&:hover {
+				cursor: pointer;
+				color: $theme-color-default;
+			}
+		}
+		.chitiet-order {
+			display: none;
+			li {
+				font-weight: bold;
+				&:not(:last-child) {
+					margin-bottom: 10px;
+				}
+			}
 		}
 	}
 	#vtab_info-update {
@@ -2292,6 +2311,7 @@
 				height: 39px;
 				margin: 0;
 				border: 1px solid #a8a8a8;
+				font-size: 14px;
 				&:focus {
 					border-color: $theme-color-default;
 					@include box-shadow(none);

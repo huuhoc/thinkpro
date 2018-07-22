@@ -158,6 +158,7 @@ thinkpro.DropdownSlide = function() {
   });
 }
 
+
 //Go to top
 thinkpro.goToTop = function() {
     var timer;
@@ -217,6 +218,14 @@ thinkpro.Myaccountpage = function() {
   })
 }
 
+/*Chi tiet order*/
+thinkpro.ViewchitietOrder = function() {
+  $('.view-chitiet-order').click(function(){
+    var id = $(this).data('value');
+    $(id).slideToggle();
+  })
+}
+
 $(document).ready(function(){
   if (responsive_mobile) {
       thinkpro.toggleMobileStyles();
@@ -230,6 +239,7 @@ $(document).ready(function(){
   thinkpro.ratingForm();
   thinkpro.Cartpage();
   thinkpro.Myaccountpage();
+  thinkpro.ViewchitietOrder();
 });
 
 $(window).on('resize', function() {
