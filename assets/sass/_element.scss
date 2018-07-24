@@ -1,7 +1,7 @@
 /************************* Compoments **************************************************/
 /*Icon ----------------------------------*/
 .icon-thinkpro {
-	background: url(../img/icon/iconmenu.png) no-repeat;
+	background: url(../images/icon/iconmenu.png) no-repeat;
 	width: 40px;
 	height: 26px;
 	display: inline-block;
@@ -31,7 +31,7 @@
 	}
 }
 .t-social {
-	background: url(../img/icon/social.png) no-repeat;
+	background: url(../images/icon/social.png) no-repeat;
 	margin-right: 5px;
 	display: inline-block;
 	vertical-align: middle;
@@ -653,7 +653,7 @@
 	 		.icon-video {
 	 			width: 65px;
 	 			height: 65px;
-	 			background: url(../img/icon/icon-video.png) scroll -7px -7px no-repeat;
+	 			background: url(../images/icon/icon-video.png) scroll -7px -7px no-repeat;
 	 			position: absolute;
 	 			top: 50%;
 	 			left: 50%;
@@ -859,7 +859,7 @@
 }
 
 .qua-tang {
-	background: url(../img/bg-quatang.png) no-repeat scroll bottom right 0 #e8f8ee;
+	background: url(../images/bg-quatang.png) no-repeat scroll bottom right 0 #e8f8ee;
 	color: #30a43b;
 	padding: 13px 90px 13px 10px;
 	margin-bottom: 9px;
@@ -1032,16 +1032,16 @@
 				border-bottom: 1px solid #e1e1e1;
 			}
 			&.khimua {
-				background: url(../img/icon/bg-baohanh.png) no-repeat scroll 0 20px;
+				background: url(../images/icon/bg-baohanh.png) no-repeat scroll 0 20px;
 			}
 			&.chinhhang {
-				background: url(../img/icon/bg-baohanh.png) no-repeat scroll 0 -30px;
+				background: url(../images/icon/bg-baohanh.png) no-repeat scroll 0 -30px;
 				a {
 					display: block;
 				}
 			}
 			&.doitra {
-				background: url(../img/icon/bg-baohanh.png) no-repeat scroll 0 -85px;
+				background: url(../images/icon/bg-baohanh.png) no-repeat scroll 0 -85px;
 			}
 		}
 	}
@@ -1574,7 +1574,7 @@
 	}
 	.category-desc {
 		border-left: 6px solid $theme-color-default;
-		background: url(../img/bg-brand-default.jpg) no-repeat;
+		background: url(../images/bg-brand-default.jpg) no-repeat;
 		.category-desc_content {
 			width: 50%;
 			padding: 12px 15px;
@@ -2256,7 +2256,7 @@
 			position: absolute;
 			right: 10px;
 			top: 10px;
-			background: url(../img/icon/icon-edit.png) no-repeat scroll 0 0;
+			background: url(../images/icon/icon-edit.png) no-repeat scroll 0 0;
 			width: 22px;
 			height: 22px;
 			cursor: pointer;
