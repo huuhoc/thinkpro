@@ -1224,6 +1224,22 @@
 					font-size: 12px;
 					border-radius: 2px;
 				}
+				input.form-control {
+					height: 35px;
+					font-size: 12px;
+				}
+				textarea.form-control {
+					font-size: 12px;
+				}
+				.btn {
+					height: 35px;
+					width: 100%;
+					font-size: 12px;
+					text-transform: uppercase;
+				}
+				.content-form {
+					display: none;
+				}
 
 			}
 			@media (max-width: 767px) {

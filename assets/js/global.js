@@ -115,6 +115,9 @@ thinkpro.ratingForm = function() {
         }
       }
   });
+  $('.lStar').click(function() {
+    $('.content-form','.rate-form').slideToggle();
+  });
 }
 
 thinkpro.toggleMenu = function() {
