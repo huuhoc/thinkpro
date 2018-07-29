@@ -985,6 +985,13 @@
 				&.active, &:hover {
 					border-color: #30a43b;
 				}
+				> a {
+					color: #666;
+					display: block;
+					&:hover {
+						text-decoration: none;
+					}
+				}
 			}
 		}
 		.built-toggle {
