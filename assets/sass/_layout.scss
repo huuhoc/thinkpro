@@ -127,6 +127,56 @@ header {
 				text-align: center;
 			}
 		}
+		#popup-thongsochitiet {
+			.modal-dialog {
+				max-width: 650px;
+			}
+			.modal-header {
+				padding: 0;
+				position: relative;
+				.close {
+					position: absolute;
+					top: -6px;
+					right: -1px;
+					background: #fff;
+					z-index: 1;
+					opacity: 1;
+					width: 30px;
+					height: 30px;
+					line-height: 10px;
+				}
+			}
+			.modal-body {
+				padding: 15px;
+				.parameter {
+					> li {
+						padding-bottom: 0;
+						> .lable-ts {
+							display: block;
+							font-size: 16px;
+							color: #222;
+							font-weight: bold;
+							margin-bottom: 15px;
+						}
+					}
+					ul {
+						margin-bottom: 0;
+						li {
+							.lable-ts {
+								min-width: 170px;
+							}
+							padding-bottom: 10px;
+							&:not(:last-child) {
+								margin-bottom: 10px;
+							}
+							&:last-child {
+								border-bottom: none;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 	.block-product-list {
 		.product-name {
