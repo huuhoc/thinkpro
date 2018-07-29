@@ -171,6 +171,26 @@
 	}
 }
 
+.cart {
+	a {
+		display: block;
+		position: relative;
+	}
+	.count-cart {
+		position: absolute;
+		top: -7px;
+		right: -3px;
+		color: #222;
+		width: 15px;
+		height: 15px;
+		line-height: 15px;
+		font-size: 10px;
+		text-align: center;
+		background: #fff;
+		@include border-radius(50%);
+	}
+}
+
 /*Banner Group --------------------------*/
 .banner-group {
 	padding-top: 10px;
