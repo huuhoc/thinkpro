@@ -114,6 +114,10 @@
 		&:after {
 			display: none;
 		}
+		.icon-thinkpro_user {
+			background: url(../images/icon/iconmenu-active.png) no-repeat;
+			background-position: 0 -200px;
+		}
 	}
 	.user_menu {
 		padding: 15px;
