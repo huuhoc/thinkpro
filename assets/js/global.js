@@ -229,6 +229,16 @@ thinkpro.ViewchitietOrder = function() {
   })
 }
 
+thinkpro.ClickCompare = function() {
+  $('.form-check.compare').click(function(){
+    $('.product-compare-list').addClass('show');
+    function hideCompare(){
+      $('.product-compare-list').removeClass('show');
+    }
+    setTimeout(hideCompare, 5000);
+  })
+}
+
 $(document).ready(function(){
   if (responsive_mobile) {
       thinkpro.toggleMobileStyles();
@@ -243,6 +253,7 @@ $(document).ready(function(){
   thinkpro.Cartpage();
   thinkpro.Myaccountpage();
   thinkpro.ViewchitietOrder();
+  thinkpro.ClickCompare();
 });
 
 $(window).on('resize', function() {
