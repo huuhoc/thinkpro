@@ -239,6 +239,12 @@ thinkpro.ClickCompare = function() {
   })
 }
 
+thinkpro.RemoveCompare = function() {
+  $('.delete-compare').click(function(){
+    $(this).parent().parent().parent().hide();
+  })
+}
+
 $(document).ready(function(){
   if (responsive_mobile) {
       thinkpro.toggleMobileStyles();
@@ -254,6 +260,7 @@ $(document).ready(function(){
   thinkpro.Myaccountpage();
   thinkpro.ViewchitietOrder();
   thinkpro.ClickCompare();
+  thinkpro.RemoveCompare();
 });
 
 $(window).on('resize', function() {
