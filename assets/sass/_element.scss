@@ -115,7 +115,7 @@
 			display: none;
 		}
 		.icon-thinkpro_user {
-			background: url(../images/icon/iconmenu-active.png) no-repeat;
+			background: url(../images/icon/iconmenu.png) no-repeat;
 			background-position: 0 -200px;
 		}
 	}
@@ -151,6 +151,12 @@
 			left: 13px;
 			top: -10px;
 			@include border-arrow-top(18px, 10px, #e1e1e1);
+		}
+	}
+	&.logged-in {
+		.icon-thinkpro_user {
+			background: url(../images/icon/iconmenu-active.png) no-repeat;
+			background-position: 0 -200px;
 		}
 	}
 }
