@@ -898,6 +898,9 @@
 	padding: 13px 90px 13px 10px;
 	margin-bottom: 9px;
 	@include border-radius(3px);
+	a {
+		color: #30a43b;
+	}
 	ul {
 		margin-bottom: 0;
 		li {
@@ -1032,9 +1035,10 @@
 		}
 		.cauhinh-xemthem {
 			margin-top: -24px;
+			margin-bottom: 23px;
 			z-index: 2;
 			position: relative;
-			padding: 23px 0;
+			padding: 23px 0 0;
 			text-align: center;
 			background-image: linear-gradient(to bottom, rgba(#fff,0.6), rgba(#fff,0.7), rgba(#fff,0.8), rgba(#fff,0.9), #ffffff);
 			cursor: pointer;
@@ -1277,9 +1281,6 @@
 					width: 100%;
 					font-size: 12px;
 					text-transform: uppercase;
-				}
-				.content-form {
-					display: none;
 				}
 
 			}
