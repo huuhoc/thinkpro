@@ -2638,3 +2638,288 @@
 		}
 	}
 }
+
+/* Icon ngân hàng */
+
+[class^="icontg-"], [class*="icontg-"] {
+    background-image: url(../images/icon/iconnganhang.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+.icontg-techcombank {
+    background-position: 0 -25px;
+    width: 90px;
+    height: 28px
+}
+
+.icontg-sacombank {
+    background-position: -99px -32px;
+    width: 83px;
+    height: 13px;
+    margin-top: 10px !important
+}
+
+.icontg-tpb {
+    background-position: -185px -25px;
+    width: 90px;
+    height: 28px
+}
+
+.icontg-anz {
+    background-position: 0 -60px;
+    width: 90px;
+    height: 28px
+}
+
+.icontg-hsbc {
+    background-position: -100px -60px;
+    width: 90px;
+    height: 28px
+}
+
+.icontg-vib {
+    background-position: -195px -60px;
+    width: 90px;
+    height: 28px
+}
+
+.icontg-nab {
+    background-position: 0 -95px;
+    width: 90px;
+    height: 28px
+}
+
+.icontg-ocb {
+    background-position: -105px -95px;
+    width: 90px;
+    height: 28px
+}
+
+.icontg-eximbank {
+    background-position: -205px -95px;
+    width: 90px;
+    height: 28px
+}
+
+.icontg-ctb {
+    background-position: 0 -130px;
+    width: 90px;
+    height: 28px
+}
+
+.icontg-sc {
+    background-position: -105px -130px;
+    width: 90px;
+    height: 28px
+}
+
+.icontg-vpbank {
+    background-position: -200px -130px;
+    width: 90px;
+    height: 28px
+}
+
+.icontg-scb {
+    background-position: 0 -165px;
+    width: 90px;
+    height: 28px
+}
+
+.icontg-shinhanbank {
+    background-position: -110px -165px;
+    width: 90px;
+    height: 28px
+}
+
+.icontg-seabank {
+    background-position: -143px -243px;
+    width: 71px;
+    height: 15px;
+    margin-top: 11px !important
+}
+
+.icontg-visa {
+    background-position: 0 -200px;
+    width: 90px;
+    height: 28px
+}
+
+.icontg-master {
+    background-position: -110px -200px;
+    width: 90px;
+    height: 28px
+}
+
+.icontg-jcb {
+    background-position: -222px -220px;
+    width: 37px;
+    height: 28px
+}
+.icontg-homecredit {
+    background-position: 0 0;
+    width: 129px;
+    height: 20px
+}
+
+.icontg-fecredit {
+    background-position: 0 -240px;
+    width: 130px;
+    height: 20px
+}
+
+.icontg-fe {
+    background-position: 0 -273px;
+    width: 90px;
+    height: 11px;
+    margin-top: 10px !important
+}
+
+.listbank {
+	overflow: hidden;
+	a {
+	    float: left;
+	    overflow: hidden;
+	    border: 1px solid #ddd;
+	    border-radius: 2px;
+	    margin: 0 10px 10px 0;
+	    width: 15%;
+	    padding: 5px 0;
+	    text-align: center;
+	    min-height: 40px;
+	    display: inline-block;
+	}
+}
+.listbank-the {
+	overflow: hidden;
+	a {
+	    float: left;
+	    overflow: hidden;
+	    border: 1px solid #ddd;
+	    border-radius: 2px;
+	    margin: 0 10px 10px 0;
+	    width: 15%;
+	    padding: 5px 0;
+	    text-align: center;
+	    min-height: 40px;
+	    display: inline-block;
+	}
+}
+
+#popup-thanhtoanonline {
+	.modal-content {
+		@include border-radius(5px);
+		overflow: hidden;
+		border: none;
+	}
+	.parameter {
+		.lable.h2 {
+			padding: 10px 0;
+			color: #222;
+			margin-bottom: 10px;
+			font-size: 14px;
+			font-weight: bold;
+		}
+		.giatri-tg {
+			&.bold {
+				font-weight: bold;
+			}
+			&.color {
+				color: red;
+			}
+		}
+		ul {
+			margin-bottom: 0;
+		}
+		.list-unstyled li {
+			border-bottom: 1px solid #e1e1e1;
+			.lable-tg {
+				min-width: 220px;
+				display: inline-block;
+				vertical-align: top;
+				border-right: 1px solid #e1e1e1;
+				padding: 10px;
+			}
+			> div {
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding-left: 10px;
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
+	}
+	.action {
+		margin-bottom: 20px;
+		.btn {
+			background: #f88409;
+			border-color: #f88409;
+			&:hover {
+				background: $theme-color-default;
+				border-color: $theme-color-default;
+			}
+		}
+	}
+}
+
+#popup-tragop {
+	.modal-content {
+		@include border-radius(5px);
+		overflow: hidden;
+		border: none;
+		.modal-body {
+			padding: 0;
+		}
+	}
+	.parameter {
+		margin-bottom: 20px;
+		.lable.h2 {
+			background: yellow;
+			padding: 10px;
+			color: #222;
+			margin-bottom: 0;
+		}
+		.giatri-tg {
+			&.bold {
+				font-weight: bold;
+			}
+			&.color {
+				color: red;
+			}
+		}
+		ul {
+			margin-bottom: 0;
+		}
+		.list-unstyled li {
+			border-bottom: 1px solid #e1e1e1;
+			.lable-tg {
+				min-width: 220px;
+				display: inline-block;
+				vertical-align: top;
+				border-right: 1px solid #e1e1e1;
+				padding: 10px;
+			}
+			> div {
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding-left: 10px;
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
+	}
+	.action {
+		margin-bottom: 20px;
+		.btn {
+			background: #f88409;
+			border-color: #f88409;
+			&:hover {
+				background: $theme-color-default;
+				border-color: $theme-color-default;
+			}
+		}
+	}
+}

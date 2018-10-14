@@ -26,9 +26,9 @@
 	<script type="text/javascript" id="" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" id="" src="assets/js/jquery.sticky-kit.min.js"></script>
 	<script type="text/javascript" id="" src="assets/js/jquery.lazyload.min.js"></script>
-	
+
 	<script type="text/javascript" id="" src="assets/js/global.js"></script>
-	
+
 </head>
 <body class="page-dat-hang">
 	<!-- **************************** Header Thinkpro **************************** -->
@@ -48,7 +48,7 @@
 											<button class="btn" type="submit">
 												<i class="fa fa-search"></i>
 											</button>
-										</span> 
+										</span>
 									</div>
 								</div>
 							</form>
@@ -259,7 +259,7 @@
 									      <input type="text" class="form-control" id="yeucaukhac" placeholder="Yêu cầu khác (không bắt buộc)">
 									    </div>
 									</div>
-																	
+
 							</div>
 
 							<div class="info-ship">
@@ -335,9 +335,80 @@
 								</div>
 							</div>
 
-							<div class="group-action d-flex align-items-center justify-content-between">
+							<div class="group-action">
+								<div class="d-flex align-items-center justify-content-between">
 								<button class="btn btn-default mr-3 w-50">Thanh toán khi nhận hàng</button>
-								<button class="btn btn-primary ml-3 w-50">Chuyển khoản online</button>
+								<a href="#" class="btn btn-primary ml-3 w-50" data-toggle="modal" data-target="#popup-thanhtoanonline">Chuyển khoản online</a>
+								</div>
+								<div class="mt-15">
+									<a href="#" class="btn btn-primary w-100" data-toggle="modal" data-target="#popup-tragop">Trả góp qua thẻ (Visa, Master, JCB)</a>
+								</div>
+							</div>
+
+							<div class="modal fade" id="popup-thanhtoanonline" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							  	<div class="modal-dialog modal-lg" role="document">
+								    <div class="modal-content">
+								      	<div class="modal-body">
+									      	<div class="parameter">
+								            	<div class="lable h2">Bước 1: Chọn ngân hàng</div>
+								            	<div class="listbank">
+								            		<a href="#"><i class="icontg-vpbank"></i></a>
+								            		<a href="#"><i class="icontg-techcombank"></i></a>
+								            		<a href="#"><i class="icontg-anz"></i></a>
+								            		<a href="#"><i class="icontg-hsbc"></i></a>
+								            		<a href="#"><i class="icontg-shinhanbank"></i></a>
+								            		<a href="#"><i class="icontg-eximbank"></i></a>
+								            		<a href="#"><i class="icontg-vib"></i></a>
+								            		<a href="#"><i class="icontg-sacombank"></i></a>
+								            		<a href="#"><i class="icontg-ctb"></i></a>
+								            		<a href="#"><i class="icontg-sc"></i></a>
+								            		<a href="#"><i class="icontg-tpb"></i></a>
+								            		<a href="#"><i class="icontg-scb"></i></a>
+								            		<a href="#"><i class="icontg-fe"></i></a>
+								            		<a href="#"><i class="icontg-nab"></i></a>
+								            	</div>
+								            	<div class="lable h2">Bước 2: Chọn loại thẻ</div>
+								            	<div class="listbank-the">
+								            		<a href="#"><i class="icontg-visa"></i></a>
+								            		<a href="#"><i class="icontg-master"></i></a>
+								            		<a href="#"><i class="icontg-jcb"></i></a>
+								            	</div>
+							            	</div>
+								      	</div>
+								    </div>
+							  	</div>
+							</div>
+							<div class="modal fade" id="popup-tragop" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							  	<div class="modal-dialog modal-lg" role="document">
+								    <div class="modal-content">
+								      	<div class="modal-body">
+									      	<div class="parameter">
+								            	<div class="lable h2">Trả góp qua thẻ VISA, ngân hàng HSBC</div>
+								            	<ul class="list-unstyled">
+								            		<li>
+								            			<span class="lable-tg">Số tháng trả góp</span>
+								            			<div class="giatri-tg bold">6 tháng</div>
+								            		</li>
+								            		<li>
+								            			<span class="lable-tg">Góp mỗi tháng</span>
+								            			<div class="giatri-tg color">543.417đ</div>
+								            		</li>
+								            		<li>
+								            			<span class="lable-tg">Tổng tiền trả góp</span>
+								            			<div class="giatri-tg color">3.260.499đ</div>
+								            		</li>
+								            		<li>
+								            			<span class="lable-tg">Chênh lệch với mua trả thẳng</span>
+								            			<div class="giatri-tg">70.499đ</div>
+								            		</li>
+								            	</ul>
+							            	</div>
+							            	<div class="action d-flex justify-content-center">
+							            		<a href="#" class="btn btn-default">Chọn mua</a>
+							            	</div>
+								      	</div>
+								    </div>
+							  	</div>
 							</div>
 
 						</form>
