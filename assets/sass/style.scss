@@ -11,5 +11,9 @@ body {
 	color: #666;
 }
 
+iframe {
+    max-width: 100%;
+}
+
 @import "layout";
 @import "element";

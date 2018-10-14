@@ -878,7 +878,6 @@
 	}
 }
 
-
 /*Product detail ---------------------------*/
 .productdetail-title {
 	border-bottom: 1px solid #ddd;
@@ -1569,6 +1568,13 @@
 }
 
 /* Tintuc detail --------------------------- */
+.page-tintucdetail {
+	.content-baiviet {
+		img {
+			max-width: 100%;
+		}
+	}
+}
 .menu-tintuc {
 	li a {
 		text-transform: uppercase;
@@ -2055,6 +2061,7 @@
 			}
 			.btn {
 				height: 50px;
+				line-height: 43px;
 				font-size: 14px;
 				padding-left: 25px; 
 				padding-right: 25px;
