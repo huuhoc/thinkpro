@@ -10,7 +10,15 @@ body {
 	font-weight: normal;
 	color: #666;
 }
-
+.embed-responsive iframe {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
 iframe {
     max-width: 100%;
 }

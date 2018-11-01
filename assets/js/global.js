@@ -27,6 +27,25 @@ thinkpro.toggleMobileStyles = function() {
     }
 };
 
+thinkpro.SliderShow = function() {
+  if ($('#slidershow').length) {
+    $('#slidershow').owlCarousel({
+      margin: 0,
+      items: 1,
+      nav: true,
+      navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+      dots: false,
+      loop:true,
+      margin:10,
+      autoplay:true,
+      autoplayTimeout:4000,
+      autoplayHoverPause:true,
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn',
+    })
+  }
+}
+
 thinkpro.Owlthumnail = function() {
   if ($('.listimage-type .owl-carousel').length) {
     $(".listimage-type .owl-carousel").owlCarousel({
@@ -249,6 +268,7 @@ $(document).ready(function(){
   if (responsive_mobile) {
       thinkpro.toggleMobileStyles();
   }
+  thinkpro.SliderShow();
   thinkpro.toggleMenu();
   thinkpro.Viewfull();
   thinkpro.CauhinhXemthem();
