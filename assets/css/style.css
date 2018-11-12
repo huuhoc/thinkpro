@@ -2045,6 +2045,12 @@ footer a:hover {
   color: #222;
 }
 
+@media (max-width: 767px) {
+  #backtop {
+    bottom: 40px;
+  }
+}
+
 /*Canvas menu */
 #mobile_menu_dropdown {
   display: none;

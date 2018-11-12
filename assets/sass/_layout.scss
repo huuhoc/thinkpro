@@ -409,6 +409,9 @@ footer {
 		&:hover {
 			color: #222;
 		}
+		@media (max-width: 767px) {
+			bottom: 40px;
+		}
 	}
 
 /*Canvas menu */
