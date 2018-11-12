@@ -154,6 +154,13 @@ thinkpro.toggleMenu = function() {
   });
 }
 
+thinkpro.VoucherClick = function() {
+  $('.using-codediscount').click(function(e){
+    e.preventDefault();
+    $('.form-voucher').slideToggle();
+  });
+}
+
 thinkpro.sticky_banner = function() {
   var window_width = $( window ).width();
   $(".content-col-left, .content-col-right").trigger("sticky_kit:detach");
@@ -202,6 +209,28 @@ thinkpro.goToTop = function() {
 
 //Cart page
 thinkpro.Cartpage = function() {
+  $(document).ready(function(){
+    var first =  $("input[name='phuongthucgiaohang']:checked").val();
+    if (first == 'diachigiaohang') {
+      $('.diachicuahang').slideUp();
+      $('.diachigiaohang').slideDown();
+    }
+    else if (first == 'taicuahang') {
+      $('.diachigiaohang').slideUp();
+      $('.diachicuahang').slideDown();
+    }
+  })
+  $('input[type=radio][name=phuongthucgiaohang]').change(function() {
+    var aa =  $("input[name='phuongthucgiaohang']:checked").val();
+    if (aa == 'diachigiaohang') {
+      $('.diachicuahang').slideUp();
+      $('.diachigiaohang').slideDown();
+    }
+    else if (aa == 'taicuahang') {
+      $('.diachigiaohang').slideUp();
+      $('.diachicuahang').slideDown();
+    }
+  });
   $('input[type=radio][name=phuongthucgiaohang]').change(function() {
     var aa =  $("input[name='phuongthucgiaohang']:checked").val();
     if (aa == 'diachigiaohang') {
@@ -280,6 +309,7 @@ $(document).ready(function(){
   thinkpro.Myaccountpage();
   thinkpro.ViewchitietOrder();
   thinkpro.ClickCompare();
+  thinkpro.VoucherClick();
   thinkpro.RemoveCompare();
 });
 
