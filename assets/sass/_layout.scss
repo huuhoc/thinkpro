@@ -457,12 +457,17 @@ footer {
 		}
     }
     .users {
-    	.users-title {display: none;}
+    	.users-title {
+			display: none !important;
+		}
     	.user_menu {
-    		padding: 0;
-    		padding-top: 10px;
     		list-style: none;
     		overflow: hidden;
+    		position: relative;
+			display: block !important;
+			float: none;
+			border: none;
+			padding: 10px 0 important;
     		li {
     			width: 32.66%;
     			margin-left: 1%;
@@ -471,8 +476,15 @@ footer {
     			&:first-child{
     				margin-left: 0;
     			}
-    			a {color: $theme-color-default;}
+    			a {
+    				font-size: 12px;
+					color: #000 !important;
+					&:hover {
+						color: $theme-color-default !important;
+					}
+    			}
     		}
+    		
     	}
     }
 }
