@@ -2850,6 +2850,7 @@ body.overflow {
 .product-item .product-item-inner {
   border: 1px solid #f4f4f4;
   overflow: hidden;
+  height: 100%;
 }
 
 .product-item .product-thumb {
