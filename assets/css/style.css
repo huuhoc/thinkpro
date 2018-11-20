@@ -4266,10 +4266,6 @@ body.overflow {
   }
 }
 
-.main-pagebrand .list-products {
-  margin-top: 20px;
-}
-
 .main-pagebrand .loadmore-product {
   text-align: center;
   margin-top: 10px;
@@ -4303,6 +4299,7 @@ body.overflow {
 #search_filters .search_filters_grouptop {
   background: #e7edf1;
   padding: 5px 10px;
+  margin-bottom: 20px;
 }
 
 #search_filters .search_filters_grouptop .facet .btn {
@@ -4325,6 +4322,7 @@ body.overflow {
   margin-top: 4px;
   padding: 0;
   padding-bottom: 10px;
+  padding-top: 10px;
   min-width: 180px;
   background: #fff;
   -webkit-border-radius: 4px;
@@ -4388,6 +4386,22 @@ body.overflow {
   margin-top: 2px;
 }
 
+#search_filters .search_filters_grouptop .facet.type-select .dropdown-item i {
+  opacity: 0;
+}
+
+#search_filters .search_filters_grouptop .facet.type-select .dropdown-item.active {
+  color: #27bece;
+}
+
+#search_filters .search_filters_grouptop .facet.type-select .dropdown-item.active i {
+  opacity: 1;
+}
+
+#search_filters .search_filters_grouptop .facet.type-select .dropdown-item:hover {
+  color: #27bece;
+}
+
 @media (max-width: 767px) {
   #search_filters .search_filters_grouptop {
     display: block !important;
@@ -4400,14 +4414,46 @@ body.overflow {
   }
 }
 
+#search_filters .search_filters_choosedfilter {
+  margin-bottom: 10px;
+}
+
+#search_filters .search_filters_choosedfilter a {
+  display: inline-block;
+  padding: 6px 15px;
+  background: #27bece;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 12px;
+}
+
+#search_filters .search_filters_choosedfilter a i {
+  margin-left: 5px;
+}
+
+#search_filters .search_filters_choosedfilter a:not(:last-child) {
+  margin-right: 10px;
+}
+
+#search_filters .search_filters_choosedfilter a.reset {
+  background: #c10017;
+}
+
+#search_filters .search_filters_choosedfilter a:hover {
+  background: #c10017;
+  text-decoration: none;
+}
+
 #search_filters .search_filters_groupbottom {
-  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 #search_filters .search_filters_groupbottom .subcategory .list-inline-item {
   padding: 8px 32px;
   background: #e7edf1;
   border-radius: 3px;
+  margin-bottom: 10px;
 }
 
 #search_filters .search_filters_groupbottom .subcategory .list-inline-item a {
