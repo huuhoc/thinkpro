@@ -24,7 +24,7 @@ header {
 		.navbar-header {
 			text-align: center;
 			height: 50px;
-			margin-right: -10px;
+			margin-right: 0;
 			margin-left: 10px;
 			.navbar-toggler-icon {
 				width: auto;
@@ -40,6 +40,7 @@ header {
 				color: #fff;
 				font-size: 12px;
 				text-transform: uppercase;
+				display: block;
 			}
 			&.actmenu {
 				z-index: 11;
@@ -557,5 +558,8 @@ body.overflow {
 		-webkit-order: -1;
 		-ms-flex-order: -1;
 		order: -1;
+	}
+	#_mobile_headerleft {
+		width: 100%;
 	}
 }

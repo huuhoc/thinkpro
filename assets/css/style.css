@@ -1607,7 +1607,7 @@ header .header-mobile .navbar-toggler:focus {
 header .header-mobile .navbar-header {
   text-align: center;
   height: 50px;
-  margin-right: -10px;
+  margin-right: 0;
   margin-left: 10px;
 }
 
@@ -1627,6 +1627,7 @@ header .header-mobile .navbar-header .navbar-toggler-text {
   color: #fff;
   font-size: 12px;
   text-transform: uppercase;
+  display: block;
 }
 
 header .header-mobile .navbar-header.actmenu {
@@ -2207,6 +2208,9 @@ body.overflow {
     -webkit-order: -1;
     -ms-flex-order: -1;
     order: -1;
+  }
+  #_mobile_headerleft {
+    width: 100%;
   }
 }
 
