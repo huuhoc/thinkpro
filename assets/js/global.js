@@ -1,7 +1,7 @@
 /*Variable --------------*/
 window.thinkpro = window.thinkpro || {};
 var current_width = $(window).width(),
-    min_width = 768,
+    min_width = 992,
     responsive_mobile = current_width < min_width;
 
 thinkpro.swapChildren = function(obj1, obj2) {

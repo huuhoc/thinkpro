@@ -2171,6 +2171,9 @@ body.overflow {
     flex: 0 0 20%;
     max-width: 20%;
   }
+  .hidden-lg-up {
+    display: none !important;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2179,6 +2182,12 @@ body.overflow {
     max-width: 20%;
   }
   .hidden-md-up {
+    display: none !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .hidden-lg-down {
     display: none !important;
   }
 }
