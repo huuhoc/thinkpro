@@ -980,16 +980,16 @@
 			flex: 0 0 45.52%;
 			max-width: 45.52%;
 		}
-		.owl-carousel .owl-item img {
-			width: auto;
-			max-width: 100%;
-			display: inline-block;
-			border: 1px solid #e1e1e1;
-			@include border-radius(3px);
-			margin-bottom: 10px;
+		.list-thumnailproduct {
+			.js-thumb {
+				border: 1px solid transparent;
+				&.selected {
+					border-color: $theme-color-default;
+				}
+			}
 		}
 		.listimage-type {
-			margin-top: 10px;
+			margin-top: 12px;
 			.owl-stage {
 				display: block;
 				overflow: visible;
@@ -1004,6 +1004,14 @@
 					color: #333;
 					line-height: normal;
 					cursor: pointer;
+					img {
+						width: auto;
+						max-width: 100%;
+						display: inline-block;
+						border: 1px solid #e1e1e1;
+						@include border-radius(3px);
+						margin-bottom: 10px;
+					}
 					&:hover {
 						color: $theme-color-default;
 						img {
