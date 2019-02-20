@@ -135,7 +135,7 @@ thinkpro.CauhinhXemthem = function() {
 }
 
 thinkpro.ratingForm = function() {
-  $('.btn-vote', '.vote-link').click(function(){
+  /*$('.btn-vote', '.vote-link').click(function(){
     var close = $(this).data('close'),
         open = $(this).data('open');
     $('.rate-form').slideToggle('slow');
@@ -145,6 +145,35 @@ thinkpro.ratingForm = function() {
     } else {
       $(this).html(close);
       $(this).addClass('btn-close');
+    }
+  });*/
+  $(document).ready(function(){
+    var first =  $(".content-vote-top .btn.active").data('content');
+    if (first == '.rate-form') {
+      $('.binhluan-form').slideUp();
+      $('.rate-form').slideDown();
+    }
+    else if (first == '.binhluan-form') {
+      $('.rate-form').slideUp();
+      $('.binhluan-form').slideDown();
+    }
+  })
+  $(".content-vote-top .btn").click(function() {
+    var contentclass = $(this).data('content');
+    if($(this).hasClass('active')) {
+
+    } else {
+      $('.content-vote-top .btn').removeClass('active');
+      $(this).addClass('active');
+      $(contentclass).slideDown();
+      if (contentclass == '.rate-form') {
+        $('.binhluan-form').slideUp();
+        $('.rate-form').slideDown();
+      }
+      else if (contentclass == '.binhluan-form') {
+        $('.rate-form').slideUp();
+        $('.binhluan-form').slideDown();
+      }
     }
   });
   $('.lStar i').hover(function() {

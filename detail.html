@@ -325,53 +325,17 @@
 							<div class="vote">
 								<h4 class="title-vote">9 đánh giá Apple Macbook Pro MPXT2SA/A</h4>
 								<div class="content-vote">
-									<div class="d-flex align-items-center content-vote-top">
-										<div class="w-25 vote-trungbinh text-center"><div class="giatri">4.2</div><i class="fa fa-star"></i></div>
-										<div class="w-50 vote-chitiet">
-											<ul class="list-unstyled mb-0">
-												<li class="d-flex align-items-center justify-content-center">
-													<span>5 <i class="fa fa-star"></i></span>
-													<div class="progress">
-													<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-													</div>
-													<span>5 đánh giá</span>
-												</li>
-												<li class="d-flex align-items-center justify-content-center">
-													<span>4 <i class="fa fa-star"></i></span>
-													<div class="progress">
-														<div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-													</div>
-													<span>2 đánh giá</span>
-												</li>
-												<li class="d-flex align-items-center justify-content-center">
-													<span>3 <i class="fa fa-star"></i></span>
-													<div class="progress">
-														<div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-													</div>
-													<span>2 đánh giá</span>
-												</li>
-												<li class="d-flex align-items-center justify-content-center">
-													<span>2 <i class="fa fa-star"></i></span>
-													<div class="progress">
-														<div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-													</div>
-													<span>1 đánh giá</span>
-												</li>
-												<li class="d-flex align-items-center justify-content-center">
-													<span>1 <i class="fa fa-star"></i></span>
-													<div class="progress">
-														<div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-													</div>
-													<span>0 đánh giá</span>
-												</li>
-											</ul>
+									<div class="content-vote-top d-flex">
+										<div class="vote-link mr-2">
+											<div class="btn btn-vote active" data-content=".rate-form">Đánh giá</div>
 										</div>
-										<div class="w-25 vote-link d-flex justify-content-center"><div class="btn btn-vote" data-close="Đóng lại" data-open="Gửi đánh giá của bạn">Gửi đánh giá của bạn</div></div>
+										<div class="binhluan-link ml-2">
+											<div class="btn btn-bl" data-content=".binhluan-form">Bình Luận / Hỏi đáp</div>
+										</div>
 									</div>
 									<form class="rate-form" name="rating">
 	            						<input name="value_star" id="value_star" value="5" type="hidden">
 										<div class="ips d-flex align-items-center">
-							                <span>Chọn đánh giá của bạn</span>
 							                <span class="lStar">
 							                    <i class="fa fa-star" id="s1"></i>
 							                    <i class="fa fa-star" id="s2"></i>
@@ -401,6 +365,52 @@
 													    </div>
 													    <div class="col">
 													    	<button type="submit" class="btn btn-primary">Gửi đánh giá</button>
+													    </div>
+												    </div>
+								            	</div>
+								            </div>
+							            </div>
+							        </form>
+							        <form class="binhluan-form" name="binhluan">
+							            <div class="content-form">
+								            <div class="row spacing-10 mt-10">
+								            	<div class="col-md-6 col-sm-12 col-xs-12">
+													<textarea name="value_noidung" placeholder="Nhập bình luận, câu hỏi của bạn..." class="form-control" rows="3"></textarea>
+								            	</div>
+								            	<div class="col-md-6 col-sm-12 col-xs-12">
+								            		<div class="form-row">
+								            			<div class="col mb-10">
+													    	<input name="value_hoten" id="value_hoten" class="form-control" autofocus="" type="text" placeholder="Họ tên">
+														</div>
+														<div class="col mb-10">
+													    	<input name="value_sdt" id="value_sdt" class="form-control" autofocus="" type="text" placeholder="Số điện thoại">
+													    </div>
+												    </div>
+												    <div class="form-row">
+												    	<div class="col">
+													    	<input name="value_email" id="value_email" class="form-control col" autofocus="" type="text" placeholder="Email">
+													    </div>
+													    <div class="col">
+													    	<button type="submit" class="btn btn-primary">Gửi bình luận</button>
+													    </div>
+												    </div>
+								            	</div>
+								            </div>
+								            <!-- Khi đã đăng nhập -->
+								            <div class="row spacing-10 mt-10">
+								            	<div class="col-md-8 col-sm-12 col-xs-12">
+													<textarea name="value_noidung" placeholder="Nhập bình luận, câu hỏi của bạn..." class="form-control" rows="3"></textarea>
+								            	</div>
+								            	<div class="col-md-4 col-sm-12 col-xs-12">
+								            		<div class="form-row">
+								            			<div class="col mb-5 text-center thongtin-user">
+								            				<p class="mb-0" style="font-size: 12px;">Gửi với tư cách</p>
+													    	<strong>Long Trần</strong>
+														</div>
+												    </div>
+												    <div class="form-row">
+													    <div class="col">
+													    	<button type="submit" class="btn btn-primary">Gửi bình luận</button>
 													    </div>
 												    </div>
 								            	</div>
